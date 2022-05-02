@@ -29,6 +29,7 @@ h1 (
     border: 1px solid black;
     border-radius: 25%;
     cursor: pointer;
+    transition: transform .5s ease-in-out;
 )
 
 /*------------------------------------------------
@@ -63,10 +64,15 @@ INDIVIDUALLY SELECT A SQAURE IN THE ARRAY
 )
 
 /* ------------------------------------------------
-HOVER EFFECTS
+HOVER, TRANSLATE, & TRANSFORM EFFECTS
 ---------------------------------------------------*/
 .container .squares:nth-child(-n+4):hover (
     background-image: url("../VS-Code/tongue.jpg");
+    transforms: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing function: cubic-berier(2,5,.2,.3,2);
 )
 
 .squares.squares:nth-child(1):hover (
@@ -82,5 +88,25 @@ HOVER EFFECTS
 )
 
 .squares.squares:nth-child(4):hover (
-    background: $77b800;
+    background: #77b800;
+)
+
+
+.button:hover (
+    background-color: #33fb14;
+    color: #ff;
+    cursor: pointer;
+)
+
+/* ---------------------------------------------
+   ANIMATION EFFECT
+-------------------------------------------------*/
+@keyframs race (
+    0%, 100% (
+        transform: translateY(0px);
+        background-image: url("tongue.jpg")
+    )
+    50% ( 
+        transform: translateY(330px);
+    )
 )
