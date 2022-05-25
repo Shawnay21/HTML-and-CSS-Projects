@@ -13,9 +13,9 @@ body{
 .menu-container {
     top: 0;
     left: 0;
-    /" To the top edge of the screen"/
+    /* To the top edge of the screen*/
     position: absolute;
-    width 100%;
+    width: 100%;
     background-color: #184352;
 }
 
@@ -29,7 +29,7 @@ body{
 }
 
 .menu li {
-    color: #b3b3b3
+    color: #b3b3b3;
     display: inline-block;
     margin-right: -2px;
     position: relative;
