@@ -19,11 +19,11 @@ h1 {
 /* ----------------------------------------------
      SELECT ALL SQUARES IN THE ARRAY
 -------------------------------------------------*/
-.container .squares:nth-child{-n+4} {
-    background-image: url("../VS-Code/heart eyes.png")
+.container .squares:nth-child(-n+4) {
+    background-image: url("heart eyes.png");
     color: #fff;
     float: left;
-    width: 100px
+    width: 100px;
     height: 100px;
     margin: 5px;
     border: 1px solid black;
@@ -35,13 +35,13 @@ h1 {
 /*------------------------------------------------
     SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
 --------------------------------------------------*/
-.squares:nth-child{-n+4} p{
+.squares:nth-child(-n+4) p{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.5cm;
     font-weight: 900;
     text-align: center;
     margin:0;
-    text-shadow; 2px 1px 4px rgba(0,0,0, 0.8);
+    text-shadow: 2px 1px 4px rgba(0,0,0, 0.8);
 }
 
 /*-------------------------------------------------
@@ -52,7 +52,7 @@ INDIVIDUALLY SELECT A SQAURE IN THE ARRAY
 }
 
 .squares:nth-child(2) {
-        backgorund: #ab3fdd;
+        background: #ab3fdd;
 }
 
 .squares:nth-child(3) {
@@ -60,19 +60,19 @@ INDIVIDUALLY SELECT A SQAURE IN THE ARRAY
 }
 
 .squares:nth-child(4) {
-    background: #00b200
+    background: #00b200;
 }
 
 /* ------------------------------------------------
 HOVER, TRANSLATE, & TRANSFORM EFFECTS
 ---------------------------------------------------*/
 .container .squares:nth-child(-n+4):hover {
-    background-image: url("../VS-Code/tongue.jpg");
-    transforms: scale(.5);
+    background-image: url("tongue.jpg");
+    transform: scale(.5);
     animation-name: race;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
-    animation-timing function: cubic-berier(2,5,.2,.3,2);
+    animation-timing-function: cubic-berier(2,5,.2,.3,2);
 }
 
 .squares.squares:nth-child(1):hover {
@@ -92,20 +92,16 @@ HOVER, TRANSLATE, & TRANSFORM EFFECTS
 }
 
 
-.button:hover {
-    background-color: #33fb14;
-    color: #ff;
-    cursor: pointer;
-}
 
 /* ---------------------------------------------
    ANIMATION EFFECT
 -------------------------------------------------*/
-@keyframs race {
-    0%, 100% }
+@keyframes race {
+    0%, 100% {
         transform: translateY(0px);
         background-image: url("tongue.jpg")
-}
-    50% {}
+    }
+    50% {
         transform: translateY(330px);
+    }
 }
