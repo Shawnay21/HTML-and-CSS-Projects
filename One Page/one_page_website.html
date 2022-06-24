@@ -3,15 +3,15 @@
      <head>
 	     <meta charset="utf-8">
 	     <title>Naesthetic Beauty | The Experience</title>
-		 <link rel="stylesheet" href="shared.css">
-		 <link rel="stylesheet" href="animations.css">
+		 <link rel="stylesheet" href="./CSS/shared.css">
+		 <link rel="stylesheet" href="./CSS/animation.css">
 	 </head>
 	 <body>
 	 
 	 <!-- NAV -->
-	 <div>
-	    <div>
-		    <ul>
+	 <div class="wrap">
+	    <div class="menu-container">
+		    <ul class="menu">
 			    <a href="#home" id="link"><li>HOME</li></a>
 				<a href="#gallery"><li>GALLERY</li></a>
 				<a href="#reservation"><li>Book An Appointment</li></a>
@@ -22,9 +22,9 @@
 	
 	<!--HOME-->
 	<div id="home">
-	    <div>
-		     <div>
-			     <span>Naesthetic Beauty</span>
+	    <div class="container">
+		     <div class="text-center">
+			     <span class="head-main">Naesthetic Beauty</span>
 			</div>
 		</div>
 	</div>
@@ -36,11 +36,11 @@
 	     <h1>GALLERY</h1>
 		 <div>
 		 
-		     <!--PHOTO CONTAINER-->
-			 <div>
-			     <div>
+		     <!--PHOTO CONTAINER 1-->
+			 <div class="photo-container">
+			     <div class="photo">
 				     <img src="./Images/Lashes_1.JPG" alt="image"/>
-				     <div>
+				     <div class="photo-overlay">
 					     <h1>Click to Enlarge</h1>
 					     <p>We have appointments everyday, book your's today!</p>
 					 </div>
@@ -48,11 +48,11 @@
 			</div>
 			<!--END PHOTO-CONTAINER-->
 			
-			<!--PHOTO CONTAINER-->
-			 <div>
-			     <div>
+			<!--PHOTO CONTAINER 2-->
+			 <div class="photo-container">
+			     <div class="photo">
 				     <img src="./Images/lashes_2.PNG" alt="image"/>
-				     <div>
+				     <div class="photo-overlay">
 					     <h1>Click to Enlarge</h1>
 					     <p>We have appointments everyday, book your's today!</p>
 					 </div>
@@ -61,11 +61,11 @@
 			<!--END PHOTO-CONTAINER-->
 			
 			
-			<!--PHOTO CONTAINER-->
-			 <div>
-			     <div>
+			<!--PHOTO CONTAINER 3-->
+			 <div class="photo-container">
+			     <div class="photo">
 				     <img src="./Images/lashes_3.PNG" alt="image"/>
-				     <div>
+				     <div class="photo-overlay">
 					     <h1>Click to Enlarge</h1>
 					     <p>We have appointments everyday, book your's today!</p>
 					 </div>
@@ -73,11 +73,11 @@
 			</div>
 			<!--END PHOTO-CONTAINER-->
 			
-			<!--PHOTO CONTAINER-->
-			 <div>
-			     <div>
+			<!--PHOTO CONTAINER 4-->
+			 <div class="photo-container">
+			     <div class="photo">
 				     <img src="./Images/Lashes_4.jpg" alt="image"/>
-				     <div>
+				     <div class="photo-overlay">
 					     <h1>Click to Enlarge</h1>
 					     <p>We have appointments everyday, book your's today!</p>
 					 </div>
@@ -86,16 +86,10 @@
 			<!--END PHOTO-CONTAINER-->
 				
 			
-			<title>Inserting video</title>
-			
-			<video controls>
-			<source src="./Images/Lash_Video.MP4" type="video/mp4">
-			</video>
-			
 			<!--RSVP-->
 <section>
      <div id="reservation">
-	     <div>
+	     <div class="text-center">
 		     <h1>Appointments</h1>
 			 <div>
 			 <h2><span>Ready for your new look ?</span>
@@ -104,16 +98,16 @@
 			 <p>
 			     Please provide us with your basic contact information.
 			 </p>
-			 <div>
+			 <div class="text-center">
 			     <form action="" method="post">
 				     <input class="rsvp" type="text" value="First Name">
 					 <input class="rsvp" type="text" value="Last Name">
 					 <input class="rsvp" type="text" value="Email Address">
 					 <input class="rsvp" type="text" value="Phone Number">
-					 <div class="form-spacer">
+					 <div class="form-spacer text-center>
 					       <label class="terms">Terms and Conditions</label>
 					 </div>
-					 <div>
+					 <div class="text-center">
 					     <input type="submit" value="Submit">
 					 </div>
 				</form>
@@ -125,6 +119,8 @@
 <!--END RSVP-->
 
 <footer>
+	<div class="text-center">
   <p>Lash Artist: Shawnay Slater</p>
   <p><a href="Shawnayslater@aol.com">Shawnayslater@aol.com</a></p>
+     </div>
 </footer>
